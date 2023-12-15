@@ -74,7 +74,7 @@
                 </div>
             </div>
         @else
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="ps-card ps-card--sale-report">
                     <div class="ps-card__header">
                         <h4>{{ __('Sales Reports') }}</h4>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="ps-card ps-card--earning">
                     <div class="ps-card__header">
                         <h4>{{ __('Earnings') }}</h4>

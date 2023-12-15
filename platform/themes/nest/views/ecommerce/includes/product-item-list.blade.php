@@ -9,16 +9,16 @@
             </div>
         </div>
         <div class="product-action-1">
-            <a aria-label="{{ __('Quick View') }}" href="#" class="action-btn hover-up js-quick-view-button" data-url="{{ route('public.ajax.quick-view', $product->id) }}">
+            <a aria-label="{{ __('View') }}" href="#" class="action-btn hover-up js-quick-view-button" data-url="{{ route('public.ajax.quick-view', $product->id) }}">
                 <i class="fi-rs-eye"></i>
             </a>
             @if (EcommerceHelper::isWishlistEnabled())
-                <a aria-label="{{ __('Add To Wishlist') }}" href="#" class="action-btn hover-up js-add-to-wishlist-button" data-url="{{ route('public.wishlist.add', $product->id) }}">
+                <a aria-label="{{ __('Wishlist') }}" href="#" class="action-btn hover-up js-add-to-wishlist-button" data-url="{{ route('public.wishlist.add', $product->id) }}">
                     <i class="fi-rs-heart"></i>
                 </a>
             @endif
             @if (EcommerceHelper::isCompareEnabled())
-                <a aria-label="{{ __('Add To Compare') }}" href="#" class="action-btn hover-up js-add-to-compare-button" data-url="{{ route('public.compare.add', $product->id) }}">
+                <a aria-label="{{ __('Compare') }}" href="#" class="action-btn hover-up js-add-to-compare-button" data-url="{{ route('public.compare.add', $product->id) }}">
                     <i class="fi-rs-shuffle"></i>
                 </a>
             @endif
