@@ -42,7 +42,7 @@
                                     @endif
                                 @endforeach
                             </div>
-                            <p class="font-sm">{{ __('Up to 15% discount on your first subscribe') }}</p>
+                            <p class="font-sm">{{ __('') }}</p>
                         </div>
                     @endif
                 @endif

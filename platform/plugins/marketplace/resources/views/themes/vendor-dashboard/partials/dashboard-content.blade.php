@@ -110,7 +110,7 @@
                                     :data="{{ json_encode([
                                         ['label' => __('Revenue'), 'value' => $data['revenue']['amount'], 'color' => '#80bc00'],
                                         ['label' => __('Fees'), 'value' => $data['revenue']['fee'], 'color' => '#fcb800'],
-                                        ['label' => __('Withdrawals'), 'value' => $data['revenue']['withdrawal'], 'color' => '#fc6b00'],
+                                        ['label' => __('Withdrawals'), 'value' => $data['revenue']['withdrawal'], 'color' => '#23AED8'],
                                     ]) }}"
                                 ></revenue-chart>
                             </div>

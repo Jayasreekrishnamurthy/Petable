@@ -53,14 +53,14 @@
                                                         <span class="text-danger">{{ $errors->first('shop_name') }}</span>
                                                     @endif
                                                 </div>
-                                                <div class="form-group shop-url-wrapper">
+                                                {{-- <div class="form-group shop-url-wrapper">
                                                     <span class="d-inline-block float-right shop-url-status"></span>
                                                     <input class="form-control" name="shop_url" id="shop-url" type="text" value="{{ old('shop_url') }}" placeholder="{{ __('Shop URL') }}" data-url="{{ route('public.ajax.check-store-url') }}">
                                                     @if ($errors->has('shop_url'))
                                                         <span class="text-danger">{{ $errors->first('shop_url') }}</span>
                                                     @endif
                                                     <span class="d-inline-block"><small data-base-url="{{ route('public.store', '') }}">{{ route('public.store', (string)old('shop_url')) }}</small></span>
-                                                </div>
+                                                </div> --}}
                                                 <div class="form-group">
                                                     <input class="form-control" name="shop_phone" id="shop-phone" type="text" value="{{ old('shop_phone') }}" placeholder="{{ __('Shop phone') }}">
                                                     @if ($errors->has('shop_phone'))

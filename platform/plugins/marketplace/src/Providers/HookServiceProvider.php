@@ -112,12 +112,12 @@ class HookServiceProvider extends ServiceProvider
                             'nullable',
                             'required_if:is_vendor,1',
                         ] + explode('|', BaseHelper::getPhoneValidationRule()),
-                        'shop_url' => [
-                            'nullable',
-                            'required_if:is_vendor,1',
-                            'string',
-                            'min:2',
-                        ],
+                        // 'shop_url' => [
+                        //     'nullable',
+                        //     'required_if:is_vendor,1',
+                        //     'string',
+                        //     'min:2',
+                        // ],
                     ];
             }, 45, 2);
 
@@ -125,7 +125,7 @@ class HookServiceProvider extends ServiceProvider
                 return $attributes + [
                         'shop_name' => __('Shop Name'),
                         'shop_phone' => __('Shop Phone'),
-                        'shop_url' => __('Shop URL'),
+                        // 'shop_url' => __('Shop URL'),
                     ];
             }, 45);
 
@@ -133,19 +133,19 @@ class HookServiceProvider extends ServiceProvider
                 return $attributes + [
                         'shop_name.required_if' => __('Shop Name is required.'),
                         'shop_phone.required_if' => __('Shop Phone is required.'),
-                        'shop_url.required_if' => __('Shop URL is required.'),
+                        // 'shop_url.required_if' => __('Shop URL is required.'),
                     ];
             }, 45);
 
             add_action('customer_register_validation', function ($request) {
                 if (is_plugin_active('marketplace') && $request->input('is_vendor') == 1) {
-                    $existing = SlugHelper::getSlug($request->input('shop_url'), SlugHelper::getPrefix(Store::class));
+                    // $existing = SlugHelper::getSlug($request->input('shop_url'), SlugHelper::getPrefix(Store::class));
 
-                    if ($existing) {
-                        throw ValidationException::withMessages([
-                            'shop_url' => __('Shop URL is existing. Please choose another one!'),
-                        ]);
-                    }
+                    // if ($existing) {
+                    //     throw ValidationException::withMessages([
+                    //         'shop_url' => __('Shop URL is existing. Please choose another one!'),
+                    //     ]);
+                    // }
                 }
             }, 45, 2);
 
