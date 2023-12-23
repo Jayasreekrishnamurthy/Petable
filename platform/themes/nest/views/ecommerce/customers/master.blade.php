@@ -160,7 +160,7 @@
                                         </a>
                                     </li>
                                 @endforeach
-
+{{--
                                 @if (is_plugin_active('marketplace'))
                                     @if (auth('customer')->user()->is_vendor)
                                         <li class="nav-item">
@@ -175,7 +175,7 @@
                                             </a>
                                         </li>
                                     @endif
-                                @endif
+                                @endif --}}
 
                                 <li class="nav-item">
                                     <a class="nav-link"
