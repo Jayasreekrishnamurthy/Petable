@@ -4,7 +4,7 @@
     {!! Form::open(['route' => ['payment.update', $payment->id]]) !!}
     @method('PUT')
     <div class="row">
-        <div class="col-md-9"> 
+        <div class="col-md-9">
             <div class="widget meta-boxes">
                 <div class="widget-title">
                     <h4>
@@ -57,3 +57,8 @@
     </div>
     {!! Form::close() !!}
 @stop
+
+
+
+
+
